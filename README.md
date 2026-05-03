@@ -92,6 +92,20 @@ A small web UI is provided to try transcription and batch jobs.
 
 3. Open the URL shown by Vite (e.g. `http://localhost:5173`). If the API runs on a different origin, set the `API` base URL in `playground/src/shared.ts` (e.g. `export const API = 'http://localhost:4000'`) or use a Vite proxy to the API.
 
+
+## Available Test Datasets
+
+Example:
+```console
+python ./scripts/hf-dataset-download-extract.py --repo-id macabdul9/SuperbOODAsrSpon_CHIME6-Test
+python ./scripts/hf-dataset-download-extract.py --repo-id argmaxinc/chime-6 --end-time 28
+```
+
+### The CHiME Challenges for OOV
+* Short audios `macabdul9/SuperbOODAsrSpon_CHIME6-Test`
+* Long audios, need to split `argmaxinc/chime-6`
+
+
 ## Need help?
 
 - [Zoom AI Scribe documentation](https://developers.zoom.us/docs/ai-services/scribe)
